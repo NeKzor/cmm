@@ -1,0 +1,73 @@
+"challenge_maps"
+{
+	"sp"
+	{
+		"chapter_1"
+		{
+			"map"	"st_a1_tramride"
+			"map"	"st_a1_mel_intro"
+			"map"	"st_a1_lift"
+			"map"	"st_a1_garden"
+		}
+		"chapter_2"
+		{
+			"map"	"st_a2_garden_de"
+			"map"	"st_a2_underbounce"
+			"map"	"st_a2_once_upon"
+			"map"	"st_a2_past_power"
+			"map"	"st_a2_ramp"
+			"map"	"st_a2_firestorm"
+		}
+		"chapter_3"
+		{
+			"map"	"st_a3_junkyard"
+			"map"	"st_a3_concepts"
+			"map"	"st_a3_paint_fling"
+			"map"	"st_a3_faith_plate"
+			"map"	"st_a3_transition"
+		}
+		"chapter_4"
+		{
+			"map"	"st_a4_overgrown"
+			"map"	"st_a4_tb_over_goo"
+			"map"	"st_a4_two_of_a_kind"
+			"map"	"st_a4_destroyed"
+			"map"	"st_a4_factory"
+		}
+		"chapter_5"
+		{
+			"map"	"st_a4_core_access"
+			"map"	"st_a4_finale"
+		}
+		"chapter_6"
+		{
+			"map"	"sp_a2_garden_de"
+			"map"	"sp_a2_underbounce"
+			"map"	"sp_a2_once_upon"
+			"map"	"sp_a2_past_power"
+			"map"	"sp_a2_ramp"
+			"map"	"sp_a2_firestorm"
+		}
+		"chapter_7"
+		{
+			"map"	"sp_a3_junkyard"
+			"map"	"sp_a3_concepts"
+			"map"	"sp_a3_paint_fling"
+			"map"	"sp_a3_faith_plate"
+			"map"	"sp_a3_transition"
+		}
+		"chapter_8"
+		{
+			"map"	"sp_a4_overgrown"
+			"map"	"sp_a4_tb_over_goo"
+			"map"	"sp_a4_two_of_a_kind"
+			"map"	"sp_a4_destroyed"
+			"map"	"sp_a4_factory"
+		}
+		"chapter_9"
+		{
+			"map"	"sp_a4_core_access"
+			"map"	"sp_a4_finale"
+		}
+	}
+}
