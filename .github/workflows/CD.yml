@@ -1,0 +1,65 @@
+name: Release CD
+
+on:
+  push:
+    tags:
+      - "*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Format check
+        run: deno fmt --check
+
+      - name: Lint
+        run: deno lint
+
+      - name: Type check
+        run: deno task check:types
+
+      #- name: Test
+      #  run: deno test -A
+
+      - name: Compile
+        run: |
+          deno task compile
+
+      - name: Pack VPKs
+        run: |
+          deno task pack
+
+      - name: Create archives
+        run: |
+          7z a cmm-${{ github.ref_name }}-linux.zip ${{ github.workspace }}/src/bin/cmm
+          7z a cmm-${{ github.ref_name }}-windows.zip ${{ github.workspace }}/src/bin/cmm.exe
+          pushd mods/portal_stories
+          7z a cmm-${{ github.ref_name }}-portal_stories.zip -x'!resource' -x'!scripts'
+          pushd
+
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: CMM ${{ github.ref_name }}
+          prerelease: ${{ contains(github.ref, 'pre') }}
+          body: |
+            Challenge Mode Mod Installer.
+            Windows: [Download cmm-${{ github.ref_name }}-windows.zip](https://github.com/NeKzor/cmm/releases/download/${{ github.ref_name }}/cmm-${{ github.ref_name }}-windows.zip)
+            Linux: [Download cmm-${{ github.ref_name }}-linux.zip](https://github.com/NeKzor/cmm/releases/download/${{ github.ref_name }}/cmm-${{ github.ref_name }}-linux.zip)
+
+            Usage:
+            - Run the installer from anywhere. Required files will be dowloaded automatically.
+          files: |
+            cmm-${{ github.ref_name }}-windows.zip
+            cmm-${{ github.ref_name }}-linux.zip
+            mods/portal_stories/cmm-${{ github.ref_name }}-portal_stories.zip
