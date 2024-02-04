@@ -14,10 +14,21 @@ import { modifyGameInfo } from './game.ts';
 const ChallengeModeModVersion = '0.1.0';
 const UserAgent = 'cmm/' + ChallengeModeModVersion;
 const GitHubRepository = 'NeKzor/cmm';
+const isWindows = Deno.build.os === 'windows';
 
 let verbose = false;
 
-const isWindows = Deno.build.os === 'windows';
+const defaultCommonPath = isWindows
+  ? 'C:\\Program Files (x86)\\Steam\\steamapps\\common'
+  : join('/home/', Deno.env.get('USER') ?? 'user', '/.steam/steam/steamapps/common');
+
+const exit = (code: number): never => {
+  if (isWindows) {
+    console.info(`\nThis window can be closed now.`);
+    Deno.stdin.readSync(new Uint8Array(1));
+  }
+  Deno.exit(code);
+};
 
 interface Game {
   folder: string;
@@ -81,7 +92,7 @@ const downloadChallengeModeMod = async (game: Game, cmmFolder: string) => {
   } catch (err) {
     verbose && console.error(err);
     console.error(colors.red(`❌️ Failed to download cmm contents.`));
-    Deno.exit(1);
+    exit(1);
   }
 };
 
@@ -118,7 +129,7 @@ const downloadSourceAutoRecord = async (sarPath: string, pdbPath: string | null)
   } catch (err) {
     verbose && console.error(err);
     console.error(colors.red(`❌️ Failed to download SAR.`));
-    Deno.exit(1);
+    exit(1);
   }
 };
 
@@ -146,7 +157,7 @@ const validateApiKey = async (apiKey: string) => {
   } catch (err) {
     verbose && console.error(err);
     console.error(colors.red(`❌️ Failed to check API key.`));
-    Deno.exit(1);
+    exit(1);
   }
 };
 
@@ -158,121 +169,77 @@ const cli = new Command()
   .action(async (option) => {
     verbose = !!option.verbose;
 
-    const setup = await prompt([
+    const gameSelect = await prompt([
       {
-        name: 'game_name',
-        message: '🎮️ Choose which game to install the mod:',
+        name: 'name',
+        message: '🎮️ Choose which game to install the mod to:',
         type: Select,
         options: Object.keys(supportedGames),
       },
-      {
-        name: 'steam_common',
-        message: "📂️ Please enter your Steam's common directory path where all games are installed.",
-        suggestions: [
-          isWindows
-            ? 'C:\\Program Files (x86)\\Steam\\steamapps\\common'
-            : join('/home/', Deno.env.get('USER') ?? 'user', '/.steam/steam/steamapps/common'),
-        ],
-        type: Input,
-        after: async ({ steam_common, game_name }, next) => {
-          if (steam_common) {
-            try {
-              const { state } = await Deno.permissions.request({
-                name: 'read',
-                path: steam_common,
-              });
-
-              if (state !== 'granted') {
-                console.log(colors.red("❌️ Access denied for Steam's common folder."));
-                Deno.exit(1);
-              }
-
-              const stat = await Deno.stat(steam_common);
-              if (stat.isDirectory) {
-                let errored = false;
-
-                const gamesDir = steam_common;
-
-                const { state } = await Deno.permissions.request({
-                  name: 'read',
-                  path: gamesDir,
-                });
-
-                if (state !== 'granted') {
-                  console.log(colors.red("❌️ Access denied for Steam's common folder."));
-                  Deno.exit(1);
-                }
-
-                const game = supportedGames[game_name as keyof typeof supportedGames] as Game;
-
-                try {
-                  await Deno.stat(join(gamesDir, game.folder));
-                } catch (err) {
-                  verbose && console.error(err);
-                  console.error(colors.red(`❌️ ${game_name} is not installed.`));
-
-                  errored = true;
-                }
-
-                try {
-                  // FIXME: Handle case where Portal 2 is installed on a different path
-                  //        but nobody does that, right?
-                  await Deno.stat(join(gamesDir, 'Portal 2'));
-                } catch (err) {
-                  verbose && console.error(err);
-                  console.error(colors.red(`❌️ Portal 2 is not installed.`));
-
-                  errored = true;
-                }
-
-                if (errored) {
-                  Deno.exit(1);
-                }
-
-                return await next();
-              } else {
-                console.error(`❌️ Please provide a valid path to a folder.`);
-              }
-            } catch (err) {
-              verbose && console.error(err);
-            }
-          }
-
-          console.log(colors.red('Invalid directory.'));
-          await next('steam_common');
-        },
-      },
     ]);
 
-    const game = supportedGames[setup.game_name as keyof typeof supportedGames] as Game;
-    const gameDir = join(setup.steam_common!, game.folder);
-    const gameInfo = join(gameDir, game.mod, 'gameinfo.txt');
+    const game = supportedGames[gameSelect.name as keyof typeof supportedGames] as Game;
+    let steamCommon = defaultCommonPath;
 
-    const result = await modifyGameInfo(gameInfo);
-    if (typeof result === 'string') {
-      console.error(colors.red(`❌️ ${result}`));
-      Deno.exit(1);
+    if (!(await exists(join(defaultCommonPath, game.folder)))) {
+      const steamCommonInput = await prompt([
+        {
+          name: 'path',
+          message: "📂️ Please enter your Steam's common directory path where all games are installed:",
+          suggestions: [defaultCommonPath],
+          type: Input,
+          after: async ({ path }, next) => {
+            if (path) {
+              try {
+                const stat = await Deno.stat(path);
+                if (stat.isDirectory) {
+                  let errored = false;
+
+                  if (!await exists(join(path, game.folder))) {
+                    console.error(colors.red(`❌️ ${gameSelect.name} is not installed.`));
+                    errored = true;
+                  }
+
+                  // FIXME: Handle case where Portal 2 is installed on a different path
+                  //        but nobody does that, right?
+                  if (!await exists(join(path, 'Portal 2'))) {
+                    console.error(colors.red(`❌️ Portal 2 is not installed.`));
+                    errored = true;
+                  }
+
+                  if (errored) {
+                    exit(1);
+                  }
+
+                  return await next();
+                } else {
+                  console.error(`❌️ Please provide a valid path to a folder.`);
+                }
+              } catch (err) {
+                verbose && console.error(err);
+              }
+            }
+
+            console.log(colors.red('Invalid directory.'));
+            await next('path');
+          },
+        },
+      ]);
+
+      steamCommon = steamCommonInput.path!;
     }
 
-    console.info(result ? `Modified gameinfo.txt` : `Gameinfo is already modified. Skipping step.`);
-
-    const cmmFolder = join(gameDir, 'cmm');
-    if (!await exists(cmmFolder)) {
-      await downloadChallengeModeMod(game, cmmFolder);
-    } else {
-      // TODO: Ask to uninstall the mod?
-      console.info(`The mod contents are already downloaded. Skipping step.`);
-    }
+    const gameDir = join(steamCommon, game.folder);
 
     const dlcFolder = join(gameDir, 'portal2_dlc1');
-    const portal2DlcFolder = join(setup.steam_common!, 'Portal 2', 'portal2_dlc1');
+    const portal2DlcFolder = join(steamCommon, 'Portal 2', 'portal2_dlc1');
 
     if (!await exists(dlcFolder)) {
       if (!await exists(portal2DlcFolder)) {
         console.error(
           colors.red(`❌️ Unable to find portal2_dlc1. Please make sure that Portal 2 is installed correctly.`),
         );
-        Deno.exit(1);
+        exit(1);
       }
 
       const loading = new Spinner({ message: 'Copying DLC folder...' });
@@ -285,6 +252,23 @@ const cli = new Command()
     } else {
       console.info(`The DLC folder is already copied. Skipping step.`);
     }
+
+    const cmmFolder = join(gameDir, 'cmm');
+    if (!await exists(cmmFolder)) {
+      await downloadChallengeModeMod(game, cmmFolder);
+    } else {
+      // TODO: Ask to uninstall the mod?
+      console.info(`The mod contents are already downloaded. Skipping step.`);
+    }
+
+    const gameInfo = join(gameDir, game.mod, 'gameinfo.txt');
+    const result = await modifyGameInfo(gameInfo);
+    if (typeof result === 'string') {
+      console.error(colors.red(`❌️ ${result}`));
+      exit(1);
+    }
+
+    console.info(result ? `Modified gameinfo.txt` : `Gameinfo is already modified. Skipping step.`);
 
     const sar = join(gameDir, 'sar.' + (isWindows ? 'dll' : 'so'));
     if (!await exists(sar)) {
@@ -305,7 +289,9 @@ const cli = new Command()
 
 try {
   await cli.parse(Deno.args);
+  exit(0);
 } catch (err) {
   verbose && console.error(err);
   console.error(colors.red(`❌️ Unknown error.`));
+  exit(1);
 }
