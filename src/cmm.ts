@@ -54,14 +54,15 @@ const downloadChallengeModeMod = async (game: Game, cmmFolder: string) => {
       },
     });
 
-    loading.stop();
-
     const blob = await res.blob();
+    loading.stop();
 
     let zip: ZipReader<BlobReader> | null = null;
 
     try {
       zip = new ZipReader(new BlobReader(blob), { useWebWorkers: false });
+
+      await Deno.mkdir(cmmFolder);
 
       for (const entry of await zip.getEntries()) {
         const data = await entry.getData!(new Uint8ArrayWriter());
@@ -69,19 +70,17 @@ const downloadChallengeModeMod = async (game: Game, cmmFolder: string) => {
         await Deno.writeFile(join(cmmFolder, entry.filename), data);
 
         console.log(
-          colors.white(`🗿️ Extracted file ${colors.italic.gray(entry.filename)}`),
+          colors.white(`Extracted file ${colors.italic.gray(entry.filename)}`),
         );
       }
 
       console.info(`Downloaded contents to cmm folder.`);
-    } catch (err) {
-      verbose && console.error(err);
     } finally {
       zip && await zip.close();
     }
   } catch (err) {
     verbose && console.error(err);
-    console.error(colors.red(`❌️ Failed to downloaded cmm contents.`));
+    console.error(colors.red(`❌️ Failed to download cmm contents.`));
     Deno.exit(1);
   }
 };
@@ -100,9 +99,7 @@ const downloadSourceAutoRecord = async (sarPath: string, pdbPath: string | null)
       },
     );
 
-    loading.stop();
-
-    using file = await Deno.open(sarPath);
+    using file = await Deno.open(sarPath, { write: true, createNew: true });
     res.body && await res.body?.pipeTo(file.writable);
 
     if (pdbPath) {
@@ -112,14 +109,15 @@ const downloadSourceAutoRecord = async (sarPath: string, pdbPath: string | null)
         },
       });
 
-      using file = await Deno.open(pdbPath);
+      using file = await Deno.open(pdbPath, { write: true, createNew: true });
       res.body && await res.body?.pipeTo(file.writable);
     }
 
+    loading.stop();
     console.info(`Downloaded SAR.`);
   } catch (err) {
     verbose && console.error(err);
-    console.error(colors.red(`❌️ Failed to downloaded SAR.`));
+    console.error(colors.red(`❌️ Failed to download SAR.`));
     Deno.exit(1);
   }
 };
@@ -141,9 +139,9 @@ const validateApiKey = async (apiKey: string) => {
       body,
     });
 
-    loading.stop();
-
     const validation = await res.json() as { userId: string };
+
+    loading.stop();
     console.info(`Validated API key:`, validation);
   } catch (err) {
     verbose && console.error(err);
@@ -256,7 +254,7 @@ const cli = new Command()
       Deno.exit(1);
     }
 
-    console.info(result ? `Modified gameinfo.txt` : `Gameinfo is already modified. Skipped step.`);
+    console.info(result ? `Modified gameinfo.txt` : `Gameinfo is already modified. Skipping step.`);
 
     const cmmFolder = join(gameDir, 'cmm');
     if (!await exists(cmmFolder)) {
@@ -281,8 +279,8 @@ const cli = new Command()
       loading.start();
 
       await copy(portal2DlcFolder, dlcFolder);
-      loading.stop();
 
+      loading.stop();
       console.info(`Copied portal2_dlc1 folder.`);
     } else {
       console.info(`The DLC folder is already copied. Skipping step.`);
@@ -292,14 +290,14 @@ const cli = new Command()
     if (!await exists(sar)) {
       await downloadSourceAutoRecord(sar, isWindows ? join(gameDir, 'sar.pdb') : null);
     } else {
-      console.warn(`Detected that SAR is already installed. Please make sure you are on the latest version.`);
+      console.warn(`Detected that SAR is already installed. Please make sure that it is the latest version.`);
     }
 
     const autosubmitKey = join(gameDir, 'autosubmit.key');
     if (await exists(autosubmitKey)) {
       await validateApiKey(await Deno.readTextFile(autosubmitKey));
     } else {
-      console.warn(`Missing autosubmit.key file. Validation step skipped.`);
+      console.warn(`Missing autosubmit.key file. Skipping validation step.`);
     }
 
     console.info(`Done.`);
