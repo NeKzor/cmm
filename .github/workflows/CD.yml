@@ -41,10 +41,10 @@ jobs:
 
       - name: Create archives
         run: |
-          7z a cmm-${{ github.ref_name }}-linux.zip ${{ github.workspace }}/cmm
-          7z a cmm-${{ github.ref_name }}-windows.zip ${{ github.workspace }}/cmm.exe
+          7z a cmm-linux.zip ${{ github.workspace }}/cmm
+          7z a cmm-windows.zip ${{ github.workspace }}/cmm.exe
           pushd mods/portal_stories
-          7z a cmm-${{ github.ref_name }}-portal_stories.zip -x'!resource' -x'!scripts'
+          7z a cmm-portal_stories.zip -x'!resource' -x'!scripts'
           popd
 
       - name: Create release
@@ -54,12 +54,12 @@ jobs:
           prerelease: ${{ contains(github.ref, 'pre') }}
           body: |
             Challenge Mode Mod Installer.
-            Windows: [Download cmm-${{ github.ref_name }}-windows.zip](https://github.com/NeKzor/cmm/releases/download/${{ github.ref_name }}/cmm-${{ github.ref_name }}-windows.zip)
-            Linux: [Download cmm-${{ github.ref_name }}-linux.zip](https://github.com/NeKzor/cmm/releases/download/${{ github.ref_name }}/cmm-${{ github.ref_name }}-linux.zip)
+            Windows: [Download cmm-windows.zip](https://github.com/NeKzor/cmm/releases/download/${{ github.ref_name }}/cmm-windows.zip)
+            Linux: [Download cmm-linux.zip](https://github.com/NeKzor/cmm/releases/download/${{ github.ref_name }}/cmm-linux.zip)
 
             Usage:
             - Run the installer from anywhere. Required files will be dowloaded automatically.
           files: |
-            cmm-${{ github.ref_name }}-windows.zip
-            cmm-${{ github.ref_name }}-linux.zip
-            mods/portal_stories/cmm-${{ github.ref_name }}-portal_stories.zip
+            cmm-linux.zip
+            cmm-windows.zip
+            mods/portal_stories/cmm-portal_stories.zip
