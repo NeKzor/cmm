@@ -41,11 +41,11 @@ jobs:
 
       - name: Create archives
         run: |
-          7z a cmm-${{ github.ref_name }}-linux.zip ${{ github.workspace }}/src/bin/cmm
-          7z a cmm-${{ github.ref_name }}-windows.zip ${{ github.workspace }}/src/bin/cmm.exe
+          7z a cmm-${{ github.ref_name }}-linux.zip ${{ github.workspace }}/cmm
+          7z a cmm-${{ github.ref_name }}-windows.zip ${{ github.workspace }}/cmm.exe
           pushd mods/portal_stories
           7z a cmm-${{ github.ref_name }}-portal_stories.zip -x'!resource' -x'!scripts'
-          pushd
+          popd
 
       - name: Create release
         uses: softprops/action-gh-release@v1
