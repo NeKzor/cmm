@@ -1,0 +1,33 @@
+{
+  "tasks": {
+    "check": "deno fmt --check && deno lint && deno task check:types",
+    "check:types": "deno check --no-lock src/*.ts",
+    "run": "deno run -A src/cmm.ts",
+    "compile": "deno task compile:lin & deno task compile:win",
+    "compile:lin": "deno compile --target x86_64-unknown-linux-gnu --output cmm -A src/cmm.ts",
+    "compile:win": "deno compile --target x86_64-pc-windows-msvc --output cmm.exe -A src/cmm.ts",
+    "pack": "deno run -A src/vpkt.ts pack --output mods/portal_stories/pak01_dir.vpk --pack mods/portal_stories",
+    "pack:check": "deno run -A src/vpkt.ts list --input mods/portal_stories/pak01_dir.vpk"
+  },
+  "exclude": [
+    "ui"
+  ],
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 120,
+    "indentWidth": 2,
+    "singleQuote": true,
+    "proseWrap": "preserve"
+  },
+  "compilerOptions": {
+    "noUncheckedIndexedAccess": true
+  },
+  "imports": {
+    "cliffy/ansi/": "https://deno.land/x/cliffy@v1.0.0-rc.3/ansi/",
+    "cliffy/command/": "https://deno.land/x/cliffy@v1.0.0-rc.3/command/",
+    "cliffy/prompt/": "https://deno.land/x/cliffy@v1.0.0-rc.3/prompt/",
+    "cliffy/table/": "https://deno.land/x/cliffy@v1.0.0-rc.3/table/",
+    "std/": "https://deno.land/std@0.214.0/",
+    "zipjs/": "https://deno.land/x/zipjs@v2.7.34/"
+  }
+}

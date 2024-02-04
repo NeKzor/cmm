@@ -1,1 +1,6 @@
 .vscode/
+ui/
+*.vpk
+*.zip
+cmm
+cmm.exe
