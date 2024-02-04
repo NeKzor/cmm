@@ -1,3 +1,6 @@
+[![Deno CI](https://github.com/NeKzor/cmm/actions/workflows/CI.yml/badge.svg)](https://github.com/NeKzor/cmm/actions/workflows/CI.yml)
+[![Release CD](https://github.com/NeKzor/cmm/actions/workflows/CD.yml/badge.svg)](https://github.com/NeKzor/cmm/actions/workflows/CD.yml)
+
 # Challenge Mode Mod
 
 Challenge mode for Portal 2 mods.
