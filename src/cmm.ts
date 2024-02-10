@@ -25,7 +25,7 @@ const defaultCommonPath = isWindows
 const exit = (code: number): never => {
   if (isWindows) {
     console.info(`\nThis window can be closed now.`);
-    Deno.stdin.readSync(new Uint8Array(1));
+    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, Infinity);
   }
   Deno.exit(code);
 };
@@ -54,7 +54,7 @@ const supportedGames: Record<string, Game> = {
   // },
 };
 
-const downloadChallengeModeMod = async (game: Game, cmmFolder: string) => {
+const downloadChallengeModeMod = async (game: Game, cmmFolder: string, dlcFolder: string) => {
   try {
     const loading = new Spinner({ message: 'Downloading mod contents...' });
     loading.start();
@@ -78,7 +78,8 @@ const downloadChallengeModeMod = async (game: Game, cmmFolder: string) => {
       for (const entry of await zip.getEntries()) {
         const data = await entry.getData!(new Uint8ArrayWriter());
 
-        await Deno.writeFile(join(cmmFolder, entry.filename), data);
+        const targetFolder = entry.filename === 'challenge_maplist.txt' ? dlcFolder : cmmFolder;
+        await Deno.writeFile(join(targetFolder, entry.filename), data);
 
         console.log(
           colors.white(`Extracted file ${colors.italic.gray(entry.filename)}`),
@@ -110,7 +111,7 @@ const downloadSourceAutoRecord = async (sarPath: string, pdbPath: string | null)
       },
     );
 
-    using file = await Deno.open(sarPath, { write: true, createNew: true });
+    using file = await Deno.open(sarPath, { write: true, create: true });
     res.body && await res.body?.pipeTo(file.writable);
 
     if (pdbPath) {
@@ -120,7 +121,7 @@ const downloadSourceAutoRecord = async (sarPath: string, pdbPath: string | null)
         },
       });
 
-      using file = await Deno.open(pdbPath, { write: true, createNew: true });
+      using file = await Deno.open(pdbPath, { write: true, create: true });
       res.body && await res.body?.pipeTo(file.writable);
     }
 
@@ -153,7 +154,8 @@ const validateApiKey = async (apiKey: string) => {
     const validation = await res.json() as { userId: string };
 
     loading.stop();
-    console.info(`Validated API key:`, validation);
+    console.info(colors.green(`Validated API key.`));
+    verbose && console.info(validation);
   } catch (err) {
     verbose && console.error(err);
     console.error(colors.red(`❌️ Failed to check API key.`));
@@ -169,23 +171,20 @@ const cli = new Command()
   .action(async (option) => {
     verbose = !!option.verbose;
 
-    const gameSelect = await prompt([
-      {
-        name: 'name',
-        message: '🎮️ Choose which game to install the mod to:',
-        type: Select,
-        options: Object.keys(supportedGames),
-      },
-    ]);
+    const gameSelect = await Select.prompt({
+      message: 'Choose which game to install the mod to:',
+      options: Object.keys(supportedGames),
+      listPointer: '>',
+    });
 
-    const game = supportedGames[gameSelect.name as keyof typeof supportedGames] as Game;
+    const game = supportedGames[gameSelect as keyof typeof supportedGames] as Game;
     let steamCommon = defaultCommonPath;
 
     if (!(await exists(join(defaultCommonPath, game.folder)))) {
       const steamCommonInput = await prompt([
         {
           name: 'path',
-          message: "📂️ Please enter your Steam's common directory path where all games are installed:",
+          message: "Please enter your Steam's common directory path where all games are installed:",
           suggestions: [defaultCommonPath],
           type: Input,
           after: async ({ path }, next) => {
@@ -196,7 +195,7 @@ const cli = new Command()
                   let errored = false;
 
                   if (!await exists(join(path, game.folder))) {
-                    console.error(colors.red(`❌️ ${gameSelect.name} is not installed.`));
+                    console.error(colors.red(`❌️ ${gameSelect} is not installed.`));
                     errored = true;
                   }
 
@@ -250,15 +249,15 @@ const cli = new Command()
       loading.stop();
       console.info(`Copied portal2_dlc1 folder.`);
     } else {
-      console.info(`The DLC folder is already copied. Skipping step.`);
+      console.info(colors.italic.gray(`DLC folder is already copied. Skipping step.`));
     }
 
     const cmmFolder = join(gameDir, 'cmm');
     if (!await exists(cmmFolder)) {
-      await downloadChallengeModeMod(game, cmmFolder);
+      await downloadChallengeModeMod(game, cmmFolder, dlcFolder);
     } else {
       // TODO: Ask to uninstall the mod?
-      console.info(`The mod contents are already downloaded. Skipping step.`);
+      console.info(colors.italic.gray(`Mod content is already downloaded. Skipping step.`));
     }
 
     const gameInfo = join(gameDir, game.mod, 'gameinfo.txt');
@@ -268,20 +267,22 @@ const cli = new Command()
       exit(1);
     }
 
-    console.info(result ? `Modified gameinfo.txt` : `Gameinfo is already modified. Skipping step.`);
+    console.info(result ? `Modified gameinfo.txt` : colors.italic.gray(`Gameinfo is already modified. Skipping step.`));
 
     const sar = join(gameDir, 'sar.' + (isWindows ? 'dll' : 'so'));
     if (!await exists(sar)) {
       await downloadSourceAutoRecord(sar, isWindows ? join(gameDir, 'sar.pdb') : null);
     } else {
-      console.warn(`Detected that SAR is already installed. Please make sure that it is the latest version.`);
+      console.warn(
+        colors.yellow(`Detected that SAR is already installed. Please make sure that it is the latest version.`),
+      );
     }
 
     const autosubmitKey = join(gameDir, 'autosubmit.key');
     if (await exists(autosubmitKey)) {
       await validateApiKey(await Deno.readTextFile(autosubmitKey));
     } else {
-      console.warn(`Missing autosubmit.key file. Skipping validation step.`);
+      console.info(colors.italic.gray(`Missing autosubmit.key file. Skipping validation step.`));
     }
 
     console.info(`Done.`);
