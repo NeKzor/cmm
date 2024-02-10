@@ -57,8 +57,11 @@ jobs:
             Windows: [Download cmm-windows.zip](https://github.com/NeKzor/cmm/releases/download/${{ github.ref_name }}/cmm-windows.zip)
             Linux: [Download cmm-linux.zip](https://github.com/NeKzor/cmm/releases/download/${{ github.ref_name }}/cmm-linux.zip)
 
+            Requirements:
+            - [SAR 1.13+](https://sar.portal2.sr)
+
             Usage:
-            - Run the installer from anywhere. Required files will be dowloaded automatically.
+            - Run the installer from anywhere. Required files will be downloaded automatically.
           files: |
             cmm-linux.zip
             cmm-windows.zip
