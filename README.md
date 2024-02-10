@@ -8,9 +8,9 @@ Challenge mode for Portal 2 mods.
 ## Requirements
 
 - Portal 2 installed
-- [SourceAutoRecord 1.13.0+]
+- [SourceAutoRecord 1.13+]
 
-[SourceAutoRecord 1.13.0+]: https://sar.portal2.sr
+[SourceAutoRecord 1.13+]: https://sar.portal2.sr
 
 ## Supported Mods
 
@@ -50,6 +50,7 @@ Challenge mode for Portal 2 mods.
 - Create a new folder called `cmm`
 - Extract all files from the downloaded archive into `cmm`
 - Copy `portal2_dlc1` from `Portal 2` into the game's folder
+- Move `cmm/challenge_maplist.txt` to replace `portal2_dlc1/challenge_maplist.txt`
 - Modify `gameinfo.txt` in `portal_stories`
   - Add `mod cmm` before `game |gameinfo_path|.`
   - Add `game portal2_dlc1` before `game portal2_dlc2`
@@ -59,6 +60,16 @@ Challenge mode for Portal 2 mods.
 ### Uninstall
 
 Revert above steps + "Verify integrity of game files" via Steam.
+
+## Contributing
+
+[Deno] is required to pack the VPK files and when working with the installer.
+
+[Deno]: https://deno.com
+
+- Use `deno task pack` to create the VPK files.
+- Move the created files into the game's `cmm` folder.
+- The installer can be tested with: `deno task run`
 
 ## Credits
 
