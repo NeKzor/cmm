@@ -58,7 +58,7 @@ const main = async () => {
               sourceFile,
               root.length ? [root, file.name].join('/') : file.name,
             );
-          } else {
+          } else if (root !== '') {
             const fileName = root.length ? [root, file.name].join('/') : file.name;
             const extension = extname(file.name).slice(1);
             const path = root;

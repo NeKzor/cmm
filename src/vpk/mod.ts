@@ -367,37 +367,12 @@ export const mergeVpk = async (
   dryRun: boolean,
 ) => {
   const allMerges = [...toMerge.values()];
-  const addedSize = allMerges.reduce((size, merges) => {
-    const paths = new Set(merges.map((merge) => merge.path!));
-    const existingPaths = new Set(
-      vpk.extensions.map((extension) => extension.paths.map((path) => path.path)).flat(),
-    );
+  const mergeNames = allMerges.map((merges) => merges.map((merge) => merge.fileName)).flat();
 
-    existingPaths.forEach((existingPath) => {
-      if (paths.has(existingPath)) {
-        paths.delete(existingPath);
-      }
-    });
-
-    const pathsSize = [...paths.values()].reduce((sum, path) => {
-      return sum + path.length + 1;
-    }, 0);
-
-    const filesSize = merges.reduce((sum, merge) => {
-      return sum + (merge.file!.length + 1) + 18;
-    }, 0);
-
-    return size + pathsSize + filesSize;
-  }, 0);
-
-  vpk.treeSize += addedSize;
-
-  const buffer = new Uint8Array(12 + vpk.treeSize);
+  const buffer = new Uint8Array(new Uint8Array(1024));
   const buf = new SourceBuffer(buffer);
 
   const dir = dirname(dirFile);
-
-  const mergeNames = allMerges.map((merges) => merges.map((merge) => merge.fileName)).flat();
 
   const curArchive = {
     archiveIndex: (vpk.entries.length
@@ -440,7 +415,9 @@ export const mergeVpk = async (
 
   buf.writeUint32(vpk.signature);
   buf.writeUint32(vpk.version);
-  buf.writeUint32(vpk.treeSize);
+  buf.consume(4);
+
+  const treeStartOffset = buf.offset;
 
   crcInit();
 
@@ -547,6 +524,12 @@ export const mergeVpk = async (
     buf.writeASCIIString('');
   }
   buf.writeASCIIString('');
+
+  vpk.treeSize = buf.offset - treeStartOffset;
+
+  buf.jump(treeStartOffset - 4, () => {
+    buf.writeUint32(vpk.treeSize);
+  });
 
   if (!dryRun) {
     await Deno.writeFile(dirFile, buf.toArray());
