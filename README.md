@@ -14,17 +14,14 @@ Challenge mode for Portal 2 mods.
 
 ## Supported Mods
 
-| Game                       | Status  | Leaderboard              |
-| -------------------------- | ------- | ------------------------ |
-| Portal Stories: Mel        | Soon    | [mel.board.nekz.me]      |
-| Aperture Tag               | Planned | [aptag.board.nekz.me]    |
-| Thinking with Time Machine | Planned | [twtm.board.nekz.me]     |
-| Portal Reloaded            | Planned | [reloaded.board.nekz.me] |
+| Game                       | Status  | Leaderboard            |
+| -------------------------- | ------- | ---------------------- |
+| Portal Stories: Mel        | Soon    | [mel.board.portal2.sr] |
+| Aperture Tag               | Planned | -                      |
+| Thinking with Time Machine | -       | -                      |
+| Portal Reloaded            | -       | -                      |
 
-[mel.board.nekz.me]: https://mel.board.nekz.me
-[aptag.board.nekz.me]: https://aptag.board.nekz.me
-[twtm.board.nekz.me]: https://twtm.board.nekz.me
-[reloaded.board.nekz.me]: https://reloaded.board.nekz.me
+[mel.board.portal2.sr]: https://mel.board.portal2.sr
 
 ## Autosubmit
 
