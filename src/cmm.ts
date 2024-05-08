@@ -55,8 +55,8 @@ const supportedGames: Record<string, Game> = {
 };
 
 const downloadChallengeModeMod = async (game: Game, cmmFolder: string, dlcFolder: string) => {
+  const loading = new Spinner({ message: 'Downloading mod contents...' });
   try {
-    const loading = new Spinner({ message: 'Downloading mod contents...' });
     loading.start();
 
     const res = await fetch(`https://github.com/${GitHubRepository}/releases/latest/download/cmm-${game.mod}.zip`, {
@@ -64,6 +64,10 @@ const downloadChallengeModeMod = async (game: Game, cmmFolder: string, dlcFolder
         'User-Agent': UserAgent,
       },
     });
+
+    if (!res.ok) {
+      throw new Error(await res.text());
+    }
 
     const blob = await res.blob();
     loading.stop();
@@ -91,6 +95,7 @@ const downloadChallengeModeMod = async (game: Game, cmmFolder: string, dlcFolder
       zip && await zip.close();
     }
   } catch (err) {
+    loading.stop();
     verbose && console.error(err);
     console.error(colors.red(`❌️ Failed to download cmm contents.`));
     exit(1);
@@ -98,8 +103,8 @@ const downloadChallengeModeMod = async (game: Game, cmmFolder: string, dlcFolder
 };
 
 const downloadSourceAutoRecord = async (sarPath: string, pdbPath: string | null) => {
+  const loading = new Spinner({ message: 'Downloading SAR...' });
   try {
-    const loading = new Spinner({ message: 'Downloading SAR...' });
     loading.start();
 
     const res = await fetch(
@@ -111,6 +116,10 @@ const downloadSourceAutoRecord = async (sarPath: string, pdbPath: string | null)
       },
     );
 
+    if (!res.ok) {
+      throw new Error(await res.text());
+    }
+
     using file = await Deno.open(sarPath, { write: true, create: true });
     res.body && await res.body?.pipeTo(file.writable);
 
@@ -121,6 +130,10 @@ const downloadSourceAutoRecord = async (sarPath: string, pdbPath: string | null)
         },
       });
 
+      if (!res.ok) {
+        throw new Error(await res.text());
+      }
+
       using file = await Deno.open(pdbPath, { write: true, create: true });
       res.body && await res.body?.pipeTo(file.writable);
     }
@@ -128,6 +141,7 @@ const downloadSourceAutoRecord = async (sarPath: string, pdbPath: string | null)
     loading.stop();
     console.info(`Downloaded SAR.`);
   } catch (err) {
+    loading.stop();
     verbose && console.error(err);
     console.error(colors.red(`❌️ Failed to download SAR.`));
     exit(1);
@@ -135,8 +149,8 @@ const downloadSourceAutoRecord = async (sarPath: string, pdbPath: string | null)
 };
 
 const validateApiKey = async (apiKey: string) => {
+  const loading = new Spinner({ message: 'Validating API key...' });
   try {
-    const loading = new Spinner({ message: 'Validating API key...' });
     loading.start();
 
     const [domain, key] = apiKey.split('\n');
@@ -151,12 +165,17 @@ const validateApiKey = async (apiKey: string) => {
       body,
     });
 
+    if (!res.ok) {
+      throw new Error(await res.text());
+    }
+
     const validation = await res.json() as { userId: string };
 
     loading.stop();
     console.info(colors.green(`Validated API key.`));
     verbose && console.info(validation);
   } catch (err) {
+    loading.stop();
     verbose && console.error(err);
     console.error(colors.red(`❌️ Failed to check API key.`));
     exit(1);
