@@ -74,6 +74,6 @@ Revert above steps + "Verify integrity of game files" via Steam.
 ## Credits
 
 - Rex (menu)
-- Sear (screenshots, testing)
+- sear (screenshots, testing)
 - Nidboj132 (testing)
 - hero (SAR)
