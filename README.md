@@ -65,7 +65,10 @@ Revert above steps + "Verify integrity of game files" via Steam.
 [Deno]: https://deno.com
 
 - Use `deno task pack` to create the VPK files.
-- Move the created files into the game's `cmm` folder.
+- Move the created files into the game's `cmm` folder
+  - `challenge_maplist.txt`
+  - `pak01_001.vpk`
+  - `pak01_dir.vpk`
 - The installer can be tested with: `deno task run`
 
 ## Credits
@@ -73,4 +76,4 @@ Revert above steps + "Verify integrity of game files" via Steam.
 - Rex (menu)
 - Sear (screenshots, testing)
 - Nidboj132 (testing)
-- Zyntex (SAR)
+- hero (SAR)
