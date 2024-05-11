@@ -14,12 +14,12 @@ Challenge mode for Portal 2 mods.
 
 ## Supported Mods
 
-| Game                       | Status  | Leaderboard            |
-| -------------------------- | ------- | ---------------------- |
-| Portal Stories: Mel        | Soon    | [mel.board.portal2.sr] |
-| Aperture Tag               | Planned | -                      |
-| Thinking with Time Machine | -       | -                      |
-| Portal Reloaded            | -       | -                      |
+| Game                       | Status   | Leaderboard            |
+| -------------------------- | -------- | ---------------------- |
+| Portal Stories: Mel        | Released | [mel.board.portal2.sr] |
+| Aperture Tag               | Planned  | -                      |
+| Thinking with Time Machine | -        | -                      |
+| Portal Reloaded            | -        | -                      |
 
 [mel.board.portal2.sr]: https://mel.board.portal2.sr
 
