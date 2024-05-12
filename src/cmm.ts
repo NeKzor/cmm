@@ -18,21 +18,6 @@ const isWindows = Deno.build.os === 'windows';
 
 let verbose = false;
 
-const kernel32 = Deno.dlopen("kernel32.dll", {
-  GetStdHandle: {
-    parameters: ["u32"],
-    result: "pointer"
-  },
-  GetConsoleMode: {
-    parameters: ["pointer", "buffer"],
-    result: "bool"
-  },
-  SetConsoleMode: {
-    parameters: ["pointer", "u32"],
-    result: "bool"
-  }
-});
-
 const defaultCommonPath = isWindows
   ? 'C:\\Program Files (x86)\\Steam\\steamapps\\common'
   : join('/home/', Deno.env.get('USER') ?? 'user', '/.steam/steam/steamapps/common');
@@ -198,6 +183,21 @@ const validateApiKey = async (apiKey: string) => {
 };
 
 const enableVirtualTerminalProcessing = () => {
+  const kernel32 = Deno.dlopen("kernel32.dll", {
+    GetStdHandle: {
+      parameters: ["u32"],
+      result: "pointer"
+    },
+    GetConsoleMode: {
+      parameters: ["pointer", "buffer"],
+      result: "bool"
+    },
+    SetConsoleMode: {
+      parameters: ["pointer", "u32"],
+      result: "bool"
+    }
+  });
+
   const STD_OUTPUT_HANDLE = 4294967295 - 11;
   const ENABLE_VIRTUAL_TERMINAL_PROCESSING = 0x0004;
 
