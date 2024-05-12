@@ -18,6 +18,21 @@ const isWindows = Deno.build.os === 'windows';
 
 let verbose = false;
 
+const kernel32 = Deno.dlopen("kernel32.dll", {
+  GetStdHandle: {
+    parameters: ["u32"],
+    result: "pointer"
+  },
+  GetConsoleMode: {
+    parameters: ["pointer", "buffer"],
+    result: "bool"
+  },
+  SetConsoleMode: {
+    parameters: ["pointer", "u32"],
+    result: "bool"
+  }
+});
+
 const defaultCommonPath = isWindows
   ? 'C:\\Program Files (x86)\\Steam\\steamapps\\common'
   : join('/home/', Deno.env.get('USER') ?? 'user', '/.steam/steam/steamapps/common');
@@ -182,6 +197,22 @@ const validateApiKey = async (apiKey: string) => {
   }
 };
 
+const enableVirtualTerminalProcessing = () => {
+  const STD_OUTPUT_HANDLE = 4294967295 - 11;
+  const ENABLE_VIRTUAL_TERMINAL_PROCESSING = 0x0004;
+
+  const handle = kernel32.symbols.GetStdHandle(STD_OUTPUT_HANDLE);
+
+  const buffer = new Uint32Array(1).fill(0);
+  kernel32.symbols.GetConsoleMode(handle, buffer);
+  
+  let consoleMode = buffer[0];
+  if (consoleMode) {
+    consoleMode = consoleMode | ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+    kernel32.symbols.SetConsoleMode(handle, consoleMode);
+  }
+}
+
 const cli = new Command()
   .name('cmm')
   .version(ChallengeModeModVersion)
@@ -189,6 +220,9 @@ const cli = new Command()
   .option('-v, --verbose [boolean]', 'Enable verbose error logging.')
   .action(async (option) => {
     verbose = !!option.verbose;
+
+    if (isWindows)
+      enableVirtualTerminalProcessing();
 
     const gameSelect = await Select.prompt({
       message: 'Choose which game to install the mod to:',

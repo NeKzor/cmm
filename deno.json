@@ -2,10 +2,10 @@
   "tasks": {
     "check": "deno fmt --check && deno lint && deno task check:types",
     "check:types": "deno check --no-lock src/*.ts",
-    "run": "deno run -A src/cmm.ts",
+    "run": "deno run --allow-ffi --unstable-ffi -A src/cmm.ts",
     "compile": "deno task compile:lin & deno task compile:win",
     "compile:lin": "deno compile --target x86_64-unknown-linux-gnu --output cmm -A src/cmm.ts",
-    "compile:win": "deno compile --target x86_64-pc-windows-msvc --output cmm.exe -A src/cmm.ts",
+    "compile:win": "deno compile --target x86_64-pc-windows-msvc --allow-ffi --unstable-ffi --output cmm.exe -A src/cmm.ts",
     "pack": "deno run -A src/vpkt.ts pack --output mods/portal_stories/pak01_dir.vpk --pack mods/portal_stories",
     "pack:check": "deno run -A src/vpkt.ts list --input mods/portal_stories/pak01_dir.vpk"
   },
