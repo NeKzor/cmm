@@ -198,7 +198,7 @@ const enableVirtualTerminalProcessing = () => {
     }
   });
 
-  const STD_OUTPUT_HANDLE = 4294967295 - 11;
+  const STD_OUTPUT_HANDLE = 4294967285;
   const ENABLE_VIRTUAL_TERMINAL_PROCESSING = 0x0004;
 
   const handle = kernel32.symbols.GetStdHandle(STD_OUTPUT_HANDLE);
