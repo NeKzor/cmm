@@ -183,19 +183,19 @@ const validateApiKey = async (apiKey: string) => {
 };
 
 const enableVirtualTerminalProcessing = () => {
-  const kernel32 = Deno.dlopen("kernel32.dll", {
+  const kernel32 = Deno.dlopen('kernel32.dll', {
     GetStdHandle: {
-      parameters: ["u32"],
-      result: "pointer"
+      parameters: ['u32'],
+      result: 'pointer',
     },
     GetConsoleMode: {
-      parameters: ["pointer", "buffer"],
-      result: "bool"
+      parameters: ['pointer', 'buffer'],
+      result: 'bool',
     },
     SetConsoleMode: {
-      parameters: ["pointer", "u32"],
-      result: "bool"
-    }
+      parameters: ['pointer', 'u32'],
+      result: 'bool',
+    },
   });
 
   const STD_OUTPUT_HANDLE = 4294967285;
@@ -205,13 +205,13 @@ const enableVirtualTerminalProcessing = () => {
 
   const buffer = new Uint32Array(1).fill(0);
   kernel32.symbols.GetConsoleMode(handle, buffer);
-  
+
   let consoleMode = buffer[0];
   if (consoleMode) {
     consoleMode = consoleMode | ENABLE_VIRTUAL_TERMINAL_PROCESSING;
     kernel32.symbols.SetConsoleMode(handle, consoleMode);
   }
-}
+};
 
 const cli = new Command()
   .name('cmm')
@@ -221,8 +221,9 @@ const cli = new Command()
   .action(async (option) => {
     verbose = !!option.verbose;
 
-    if (isWindows)
+    if (isWindows) {
       enableVirtualTerminalProcessing();
+    }
 
     const gameSelect = await Select.prompt({
       message: 'Choose which game to install the mod to:',
