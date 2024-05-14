@@ -11,7 +11,7 @@ import { copy } from 'std/fs/copy.ts';
 import { BlobReader, Uint8ArrayWriter, ZipReader } from 'zipjs/index.js';
 import { modifyGameInfo } from './game.ts';
 
-const ChallengeModeModVersion = '0.1.0';
+const ChallengeModeModVersion = '1.0.1';
 const UserAgent = 'cmm/' + ChallengeModeModVersion;
 const GitHubRepository = 'NeKzor/cmm';
 const isWindows = Deno.build.os === 'windows';
