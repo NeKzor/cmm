@@ -43,6 +43,9 @@ jobs:
         run: |
           7z a cmm-linux.zip ${{ github.workspace }}/cmm
           7z a cmm-windows.zip ${{ github.workspace }}/cmm.exe
+          pushd mods/aperturetag
+          7z a cmm-aperturetag.zip -x'!resource' -x'!scripts'
+          popd
           pushd mods/portal_stories
           7z a cmm-portal_stories.zip -x'!resource' -x'!scripts'
           popd
@@ -58,11 +61,12 @@ jobs:
             Linux: [Download cmm-linux.zip](https://github.com/NeKzor/cmm/releases/download/${{ github.ref_name }}/cmm-linux.zip)
 
             Requirements:
-            - [SAR 1.13+](https://sar.portal2.sr)
+            - [SAR](https://sar.portal2.sr)
 
             Usage:
             - Run the installer from anywhere. Required files will be downloaded automatically.
           files: |
             cmm-linux.zip
             cmm-windows.zip
+            mods/aperturetag/cmm-aperturetag.zip
             mods/portal_stories/cmm-portal_stories.zip

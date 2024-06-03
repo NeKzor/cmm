@@ -8,20 +8,21 @@ Challenge mode for Portal 2 mods.
 ## Requirements
 
 - Portal 2 installed
-- [SourceAutoRecord 1.13+]
+- [SourceAutoRecord]
 
-[SourceAutoRecord 1.13+]: https://sar.portal2.sr
+[SourceAutoRecord]: https://sar.portal2.sr
 
 ## Supported Mods
 
-| Game                       | Status   | Leaderboard            |
-| -------------------------- | -------- | ---------------------- |
-| Portal Stories: Mel        | Released | [mel.board.portal2.sr] |
-| Aperture Tag               | Planned  | -                      |
-| Thinking with Time Machine | -        | -                      |
-| Portal Reloaded            | -        | -                      |
+| Game                       | Status   | Leaderboard              |
+| -------------------------- | -------- | ------------------------ |
+| Portal Stories: Mel        | Released | [mel.board.portal2.sr]   |
+| Aperture Tag               | Planned  | [aptag.board.portal2.sr] |
+| Thinking with Time Machine | -        | -                        |
+| Portal Reloaded            | -        | -                        |
 
 [mel.board.portal2.sr]: https://mel.board.portal2.sr
+[aptag.board.portal2.sr]: https://aptag.board.portal2.sr
 
 ## Autosubmit
 
@@ -42,6 +43,7 @@ Challenge mode for Portal 2 mods.
 ### Manual
 
 - Download the contents for the game:
+  - [cmm-aperturetag.zip][cmm-aperturetag]
   - [cmm-portal_stories.zip][cmm-portal_stories]
 - Go to the game's folder `Portal Stories Mel`
 - Create a new folder called `cmm`
@@ -52,6 +54,7 @@ Challenge mode for Portal 2 mods.
   - Add `mod cmm` before `game |gameinfo_path|.`
   - Add `game portal2_dlc1` before `game portal2_dlc2`
 
+[cmm-aperturetag]: https://github.com/NeKzor/cmm/releases/latest/download/cmm-aperturetag.zip
 [cmm-portal_stories]: https://github.com/NeKzor/cmm/releases/latest/download/cmm-portal_stories.zip
 
 ### Uninstall
@@ -64,16 +67,17 @@ Revert above steps + "Verify integrity of game files" via Steam.
 
 [Deno]: https://deno.com
 
-- Use `deno task pack` to create the VPK files.
-- Move the created files into the game's `cmm` folder
-  - `challenge_maplist.txt`
-  - `pak01_001.vpk`
-  - `pak01_dir.vpk`
-- The installer can be tested with: `deno task run`
+- Use `deno task pack:aptag` or `deno task pack:mel` to create the VPK files.
+  - Move the created files into the game's `cmm` folder
+    - `pak01_001.vpk`
+    - `pak01_dir.vpk`
+  - Make sure that `portal2_dlc1` is copied from `Portal 2` to the game's folder
+  - Copy `challenge_maplist.txt` into `poratl2_dlc1`
+- The installer can be tested with: `deno task run -s` (the `-s` flag will skip the download from the repository)
 
 ## Credits
 
 - Rex (menu)
-- sear (screenshots, testing)
-- Nidboj132 (testing)
 - hero (SAR)
+- Nidboj132 (testing)
+- sear (screenshots, testing)

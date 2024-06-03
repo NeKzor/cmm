@@ -1,0 +1,2988 @@
+//**************************************
+//***START OF BATCH 124
+//**************************************
+"glados.dlc1_mp_coop_catapult_catch_intro01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_catapult_catch_intro01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_catapult_catch_outro02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_catapult_catch_outro02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_separation_1_intro03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_separation_1_intro03.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_separation_1_intro04"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_separation_1_intro04.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_separation_1_intro07"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_separation_1_intro07.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_separation_1_intro08"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_separation_1_intro08.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_tripleaxis_intro01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_tripleaxis_intro01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_tripleaxis_outro01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_tripleaxis_outro01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+//**************************************
+//***END OF BATCH 124
+//**************************************
+
+//**************************************
+//***START OF BATCH 125
+//**************************************
+"glados.dlc1_mp_coop_2paints_1bridge_outro02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_2paints_1bridge_outro02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_2paints_1bridge_outro03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_2paints_1bridge_outro03.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_2paints_1bridge_outro07"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_2paints_1bridge_outro07.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_art_death_acid01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_art_death_acid01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_art_death_acid02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_art_death_acid02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_art_death_acid04"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_art_death_acid04.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_art_death_acid05"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_art_death_acid05.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_art_death_acid06"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_art_death_acid06.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_art_death_generic01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_art_death_generic01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_art_death_generic04"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_art_death_generic04.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_art_death_generic07"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_art_death_generic07.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_art_death_generic08"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_art_death_generic08.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_art_death_generic09"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_art_death_generic09.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_art_death_generic11"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_art_death_generic11.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_art_death_generic12"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_art_death_generic12.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_art_death_turret01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_art_death_turret01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_bridge_catch_intro04"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_bridge_catch_intro04.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_bridge_catch_intro06"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_bridge_catch_intro06.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_laser_tbeam_intro01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_laser_tbeam_intro01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_laser_tbeam_intro02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_laser_tbeam_intro02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_laser_tbeam_intro03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_laser_tbeam_intro03.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_laser_tbeam_intro04"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_laser_tbeam_intro04.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_laser_tbeam_intro05"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_laser_tbeam_intro05.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_laser_tbeam_outro01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_laser_tbeam_outro01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_paint_crazy_box_intro02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_paint_crazy_box_intro02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_paint_crazy_box_intro03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_paint_crazy_box_intro03.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_paint_rat_maze_intro01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_paint_rat_maze_intro01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_paint_rat_maze_intro03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_paint_rat_maze_intro03.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_paint_rat_maze_outro01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_paint_rat_maze_outro01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+//**************************************
+//***END OF BATCH 125
+//**************************************
+
+//**************************************
+//***START OF BATCH 126
+//**************************************
+"glados.dlc1_mp_coop_ending05"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending05.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending13"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending13.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_stinger16"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_stinger16.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_stinger17"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_stinger17.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_stinger19"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_stinger19.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_stinger18"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_stinger18.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_stinger20"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_stinger20.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_success07"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_success07.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_success10"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_success10.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_success11"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_success11.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_success13"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_success13.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_success02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_success02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_finalgantry_morale01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_finalgantry_morale01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_finalgantry_morale03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_finalgantry_morale03.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_finalgantry_morale04"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_finalgantry_morale04.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_finalgantry_morale07"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_finalgantry_morale07.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+//**************************************
+//***END OF BATCH 126
+//**************************************
+
+//**************************************
+//***START OF BATCH 127
+//**************************************
+"glados.dlc1_mp_coop_threat_death_acid01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_threat_death_acid01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_threat_death_acid02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_threat_death_acid02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_threat_death_generic02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_threat_death_generic02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_threat_death_generic03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_threat_death_generic03.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_threat_death_generic04"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_threat_death_generic04.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_threat_death_generic08"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_threat_death_generic08.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_threat_death_generic10"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_threat_death_generic10.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_threat_death_partnerkill01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_threat_death_partnerkill01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_threat_death_partnerkill04"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_threat_death_partnerkill04.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_threat_death_partnerkill05"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_threat_death_partnerkill05.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_threat_death_partnerkill07"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_threat_death_partnerkill07.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+//**************************************
+//***END OF BATCH 127
+//**************************************
+
+//**************************************
+//***START OF BATCH 128
+//**************************************
+"glados.dlc1_mp_coop_2paints_1bridge_introb01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_2paints_1bridge_introb01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_2paints_1bridge_introb02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_2paints_1bridge_introb02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_2paints_1bridge_outrob01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_2paints_1bridge_outrob01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_enteroffice01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_enteroffice01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_separation_1_introb05"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_separation_1_introb05.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_separation_1_introb06"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_separation_1_introb06.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_separation_1_introb09"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_separation_1_introb09.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_separation_1_outrob01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_separation_1_outrob01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_separation_1_outrob03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_separation_1_outrob03.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+//**************************************
+//***END OF BATCH 128
+//**************************************
+
+//**************************************
+//***START OF BATCH 129
+//**************************************
+"glados.dlc1_mp_coop_bridge_catch_introb01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_bridge_catch_introb01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_bridge_catch_introb02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_bridge_catch_introb02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_bridge_catch_outrob01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_bridge_catch_outrob01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_bridge_catch_outrob03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_bridge_catch_outrob03.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_bridge_catch_outrob02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_bridge_catch_outrob02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_bridge_catch_outrob04"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_bridge_catch_outrob04.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_laser_tbeam_deathb01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_laser_tbeam_deathb01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_laser_tbeam_deathb03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_laser_tbeam_deathb03.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_laser_tbeam_deathb04"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_laser_tbeam_deathb04.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_paint_crazy_box_lights01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_paint_crazy_box_lights01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_enterbreaker01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_enterbreaker01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_enterbreaker02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_enterbreaker02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_entertest01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_entertest01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_entertest02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_entertest02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_inoffice01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_inoffice01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_inoffice04"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_inoffice04.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_inoffice09"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_inoffice09.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_inoffice02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_inoffice02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_inoffice05"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_inoffice05.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_inoffice06"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_inoffice06.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_inoffice07"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_inoffice07.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_inoffice08"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_inoffice08.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_inoffice11"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_inoffice11.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_inoffice13"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_inoffice13.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_inoffice14"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_inoffice14.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_outrob01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_outrob01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_outrob03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_outrob03.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_outrob04"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_outrob04.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_outrob07"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_outrob07.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_outrob05"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_outrob05.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_portal_bts_outrob06"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_portal_bts_outrob06.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+//**************************************
+//***END OF BATCH 129
+//**************************************
+
+//**************************************
+//***START OF BATCH 130
+//**************************************
+"glados.dlc1_leaderboard02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard03.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard04"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard04.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard24"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard24.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard05"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard05.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard06"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard06.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard23"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard23.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard07"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard07.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard08"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard08.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard09"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard09.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard22"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard22.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard10"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard10.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard11"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard11.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard13"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard13.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard14"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard14.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard15"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard15.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard16"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard16.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard17"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard17.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard18"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard18.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard19"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard19.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard20"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard20.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard12"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard12.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_leaderboard21"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_leaderboard21.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_approach01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_approach01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_approach07"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_approach07.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_approach09"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_approach09.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_approach11"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_approach11.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_approach17"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_approach17.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_approach19"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_approach19.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_attack01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_attack01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_attack05"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_attack05.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_attack03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_attack03.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_attack04"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_attack04.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_attack06"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_attack06.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_attack08"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_attack08.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_ending_attack09"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_ending_attack09.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_stingerb01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_stingerb01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_stingerb05"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_stingerb05.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_stingerb06"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_stingerb06.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_stingerb07"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_stingerb07.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_stingerb02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_stingerb02.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+"glados.dlc1_mp_coop_stingerb03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"	"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"	"vo/glados/dlc1_mp_coop_stingerb03.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_dialog"
+			"mixer"
+			{
+				"mixgroup" "gladosVO"
+			}
+		}
+	}
+}
+//**************************************
+//***END OF BATCH 130
+//**************************************

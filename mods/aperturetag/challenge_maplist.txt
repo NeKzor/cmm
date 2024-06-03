@@ -1,0 +1,50 @@
+"challenge_maps"
+{
+	"sp"
+	{
+		"chapter_1"
+		{
+			"map"	"gg_intro_wakeup"
+			"map"	"gg_blue_only"
+			"map"	"gg_blue_only_2"
+			"map"	"gg_blue_only_3"
+			"map"	"gg_blue_only_2_pt2"
+			"map"	"gg_a1_intro4"
+			"map"	"gg_blue_upplatform"
+		}
+		"chapter_2"
+		{
+			"map"	"gg_red_only"
+			"map"	"gg_red_surf"
+			"map"	"gg_all_intro"
+			"map"	"gg_all_rotating_wall"
+			"map"	"gg_all_fizzler"
+			"map"	"gg_all_intro_2"
+			"map"	"gg_a2_column_blocker"
+			"map"	"gg_all_puzzle2"
+		}
+		"chapter_3"
+		{
+			"map"	"gg_all2_puzzle1"
+			"map"	"gg_all_puzzle1"
+			"map"	"gg_all2_escape"
+		}
+		"chapter_4"
+		{
+			"map"	"gg_stage_reveal"
+			"map"	"gg_stage_bridgebounce_2"
+			"map"	"gg_stage_redfirst"
+			"map"	"gg_stage_laserrelay"
+			"map"	"gg_stage_beamscotty"
+			"map"	"gg_stage_bridgebounce"
+			"map"	"gg_stage_roofbounce"
+			"map"	"gg_stage_pickbounce"
+			"map"	"gg_stage_theend"
+		}
+		"chapter_5"
+		{
+			"map"	"gg_tag_remix"
+			"map"	"gg_trailer_map"
+		}
+	}
+}

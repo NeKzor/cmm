@@ -24,8 +24,7 @@ const defaultCommonPath = isWindows
 
 const exit = (code: number): never => {
   if (isWindows) {
-    console.info(`\nThis window can be closed now.`);
-    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, Infinity);
+    globalThis.prompt('This window can be closed now.');
   }
   Deno.exit(code);
 };
@@ -36,14 +35,14 @@ interface Game {
 }
 
 const supportedGames: Record<string, Game> = {
+  'Aperture Tag': {
+    folder: 'Aperture Tag',
+    mod: 'aperturetag',
+  },
   'Portal Stories: Mel': {
     folder: 'Portal Stories Mel',
     mod: 'portal_stories',
   },
-  // 'Aperture Tag': {
-  //   folder: 'Aperture Tag',
-  //   mod: 'aperturetag',
-  // },
   // 'Portal Reloaded': {
   //   folder: 'Portal Reloaded',
   //   mod: 'portal2',
@@ -218,6 +217,7 @@ const cli = new Command()
   .version(ChallengeModeModVersion)
   .description('Command line app for installing challenge mode for Portal 2 mods.')
   .option('-v, --verbose [boolean]', 'Enable verbose error logging.')
+  .option('-s, --skip-download [boolean]', 'Skip download.')
   .action(async (option) => {
     verbose = !!option.verbose;
 
@@ -306,12 +306,14 @@ const cli = new Command()
       console.info(colors.italic.gray(`DLC folder is already copied. Skipping step.`));
     }
 
-    const cmmFolder = join(gameDir, 'cmm');
-    if (!await exists(cmmFolder)) {
-      await downloadChallengeModeMod(game, cmmFolder, dlcFolder);
-    } else {
-      // TODO: Ask to uninstall the mod?
-      console.info(colors.italic.gray(`Mod content is already downloaded. Skipping step.`));
+    if (!option.skipDownload) {
+      const cmmFolder = join(gameDir, 'cmm');
+      if (!await exists(cmmFolder)) {
+        await downloadChallengeModeMod(game, cmmFolder, dlcFolder);
+      } else {
+        // TODO: Ask to uninstall the mod?
+        console.info(colors.italic.gray(`Mod content is already downloaded. Skipping step.`));
+      }
     }
 
     const gameInfo = join(gameDir, game.mod, 'gameinfo.txt');
